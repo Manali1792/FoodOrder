@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+/*navbar logo and image*/
+#logo{
+margin: 10px 35px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 5px;
+}
+/* #navbar{
+    position: relative;
+} */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 50%;
+    width:300%;
+    z-index: -1;
+    opacity: 0.4;
+    top:0px;
+    left:0px;
+}
+#navbar li{
+    list-style: none;  /*no dots will come*/
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/*home section*/
+#home{
+    display: flex;
+    height: 433px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 540px;
+    width:100%;
+    z-index: -1;
+    opacity: 1;  
+    top:0px;
+    left:0px;
+   
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#services{
+    margin: 35px;
+    display: flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding: 40px;
+    margin: 20px 15px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height:56px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    
+}
+/*client*/
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;;
+    width:100%;
+    height:70%;
+    z-index: 1;
+    opacity: 0.4;
+    height:300px;
+}
+#client-section{
+    position: relative;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height:120px;
+}
+.client-item{
+    padding: 40px;
+}
+/*contact*/
+#contact{
+    position: relative;
+}
+#contact ::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:20%;
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+#contact-box{
+    background: url('contact6.jpg')  center center/cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+}
+#contact-box input, #contact-box textarea{
+    width:100%;
+    padding: 05.rem;
+    border-radius: 3px ;
+    border-width: 1px;
+    font-size: 1.2rem;
+    }
+footer{
+    background: rgb(4, 3, 3);
+    color: white;
+    padding: 9px 20px;
+}
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding:12px;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/*video stop at 1.14.23*/
